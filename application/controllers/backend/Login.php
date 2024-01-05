@@ -5,6 +5,7 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('backend/login-form');
+		$data['title'] = "Login Form";
+		$this->load->view('backend/login-form', $data);
 	}
 }
